@@ -1,0 +1,71 @@
+
+<html>
+<head>
+   
+    <title>Railway Ticket Reservation Form</title>
+<style>
+h1{
+color:red;
+}
+body{
+background-color:rgb(28, 155, 148);
+}
+
+</style>
+</head>
+<body>
+    <h1>Railway Ticket Reservation</h1>
+    <form>
+        <label for="journey-date">Journey Date:</label>
+        <input type="date" id="journey-date" name="journey-date" required><br><br>
+
+        <label for="source-station">Source Station:</label>
+        <input type="text" id="source-station" name="source-station" required><br><br>
+
+        <label for="destination-station">Destination Station:</label>
+        <input type="text" id="destination-station" name="destination-station" required><br><br>
+
+        <label for="class">Class:</label>
+        <select id="class" name="class" required>
+            <option value="economy">Economy</option>
+            <option value="business">Business</option>
+            <option value="first-class">First Class</option>
+        </select><br><br>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mobile-number">Mobile Number:</label>
+        <input type="tel" id="mobile-number" name="mobile-number" pattern="[0-9]{10}" required><br><br>
+
+        <label for="concession">Availing Concession:</label>
+        <input type="checkbox" id="concession" name="concession"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method" name="payment-method" required>
+            <option value="credit-card">Credit Card</option>
+            <option value="debit-card">Debit Card</option>
+            <option value="net-banking">Net Banking</option>
+            <option value="upi">UPI</option>
+        </select><br><br>
+
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
